@@ -25,7 +25,7 @@ Furthermore, this can be also used for scaling the project. Developer has comple
 
 Moreover, the basic code provided has all the functionality required to deploy the game to a cloud. There are only few variables that the developer / dev-ops engineer needs to configure.
 
-##Testing the example deployment on GCP
+## Testing the example deployment on GCP
 
 1. Open `Builds/Client/MultiplayerRoom.exe`.
 2. You will see Mirror tanks example scene with Server address already set.
