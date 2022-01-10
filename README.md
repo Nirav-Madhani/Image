@@ -43,4 +43,11 @@ Moreover, the basic code provided has all the functionality required to deploy t
 
 Note: Number of players label will not be updated. It was for debugging purpose.
 
+## Testing with Local Server (if GCP is not online)
+
+1. Goto Python folder and type `cmd` in address bar
+2. Type `python main.py` or `python3 main.py` whichever works for you. You will see something like this.
+![image](https://user-images.githubusercontent.com/77914957/148755194-ff355a53-a2e1-4779-ac7d-43ff1989b94a.png)
+
+3. Open `Builds/ClientLocal/MultiplayerRoom.exe` instead of `Builds/Client/MultiplayerRoom.exe`. and rest of the steps are same.
 
