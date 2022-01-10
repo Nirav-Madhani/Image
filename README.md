@@ -29,13 +29,18 @@ Moreover, the basic code provided has all the functionality required to deploy t
 
 1. Open `Builds/Client/MultiplayerRoom.exe`.
 2. You will see Mirror tanks example scene with Server address already set.
-![image](https://user-images.githubusercontent.com/77914957/148752639-25cd4b48-3f36-46ad-87ec-f2620a789fd4.png)
+
+![image](https://user-images.githubusercontent.com/77914957/148752639-25cd4b48-3f36-46ad-87ec-f2620a789fd4.png) 
+
 3. If you seen `Port Number` already set to `10001 or greater`, that means server is running in the GCP
+
 ![image](https://user-images.githubusercontent.com/77914957/148752892-1a552915-c4c0-42a5-b138-41f23d6e90a9.png)
-Note: Number of players label will not be updated. It was for debugging purpose.
+
 4. Simply Click on client and game will be loaded.
 5. Open one more instance of game on your PC or other PC and enjoy the demo.
 6. Open more than 4 instance and you will see that 5th one will open in other room.
 (If you are the onlly one testing server at that time)
+
+Note: Number of players label will not be updated. It was for debugging purpose.
 
 
