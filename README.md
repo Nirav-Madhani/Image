@@ -39,7 +39,7 @@ Moreover, the basic code provided has all the functionality required to deploy t
 4. Simply Click on client and game will be loaded.
 5. Open one more instance of game on your PC or other PC and enjoy the demo.
 6. Open more than 4 instance and you will see that 5th one will open in other room.
-(If you are the onlly one testing server at that time)
+(If you are the only one testing server at that time)
 
 Note: Number of players label will not be updated. It was for debugging purpose.
 
