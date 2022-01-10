@@ -9,8 +9,11 @@ from config import *
 #https://stackoverflow.com/a/2581943/12907462
 def popen_and_call(on_exit, popen_args):
     def run_in_thread(on_exit, popen_args):
-        proc = subprocess.Popen(f'../Builds/MultiplayerRoom.exe {popen_args}',popen_args)
+        #Windows
+        proc = subprocess.Popen(f'{EXC_PATH} {popen_args}',shell=False)
         proc.wait()
+        #Linux
+        #subprocess.call(f'{EXC_PATH} {popen_args}',shell=True)
         on_exit(popen_args)
         return
     thread = threading.Thread(target=run_in_thread, args=(on_exit, popen_args))
@@ -48,7 +51,7 @@ class Server(BaseHTTPRequestHandler):
         
         for k,v in self.instances.items():
             if v < self.maxPlayers:
-                self.instances[k] = v+1
+                #self.instances[k] = v+1
                 return k
         for  i in range(self.startPort,self.startPort+self.maxInstances):
             print(i)
@@ -83,12 +86,13 @@ class Server(BaseHTTPRequestHandler):
         self.wfile.write(f'Select Path {self.path}'.encode())
     
     def UpdateStatus(self,params):
-        if self.clientHost != self.serverHost:
+        if self.clientHost != '127.0.0.1':
             print(self.clientHost,self.serverHost)    
             self.send_header('content-type', 'text/plain')
             self.end_headers()        
             self.wfile.write(b"Error")
             return
+        print(self.clientHost,self.serverHost)    
         port = int(params['port'])
         players = int(params['players'])
         self.instances[port] = players

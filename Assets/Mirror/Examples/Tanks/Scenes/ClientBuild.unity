@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 1282001520}
   - component: {fileID: 1282001519}
   - component: {fileID: 1282001521}
-  - component: {fileID: 1282001523}
+  - component: {fileID: 1282001522}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -525,7 +525,7 @@ MonoBehaviour:
   offlineScene: 
   onlineScene: 
   transport: {fileID: 1282001521}
-  networkAddress: localhost
+  networkAddress: 34.125.205.50
   maxConnections: 100
   authenticator: {fileID: 0}
   playerPrefab: {fileID: 1916082411674582, guid: 6f43bf5488a7443d19ab2a83c6b91f35, type: 3}
@@ -558,7 +558,7 @@ MonoBehaviour:
   debugLog: 0
   statisticsGUI: 0
   statisticsLog: 0
---- !u!114 &1282001523
+--- !u!114 &1282001522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -570,7 +570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a95d892303addc45916365649396035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  server: http://127.0.0.1:5555/
+  serverAddress: http://34.125.205.50:10000/
+  interval: 5
 --- !u!1 &1458789072
 GameObject:
   m_ObjectHideFlags: 0
