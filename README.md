@@ -56,6 +56,8 @@ Note: Number of players label will not be updated. It was for debugging purpose.
 3. Open `Builds/ClientLocal/MultiplayerRoom.exe` instead of `Builds/Client/MultiplayerRoom.exe`. and rest of the steps are same.
 
 Docs:
-[Hosting on GCP](HostingGCP.md)
+- [Manual](Docs/Documentation.docx )
+- [Hosting on GCP](HostGCP.md)
+
 
 
