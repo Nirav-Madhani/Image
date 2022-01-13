@@ -15,7 +15,7 @@ Image - Server Instance and Room management for **Mirror**
 ```
 ## Index
 
-- [Why and When to use Image](why-and-when-to-use-image)
+- [Why and When to use Image](#why-and-when-to-use-image)
 - [Architecture and FLow](architecture-and-flow)
 - [Contributing](contributing)
 - [To Do](to-do)
