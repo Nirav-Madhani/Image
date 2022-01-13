@@ -16,12 +16,12 @@ Image - Server Instance and Room management for **Mirror**
 ## Index
 
 - [Why and When to use Image](#why-and-when-to-use-image)
-- [Architecture and FLow](architecture-and-flow)
-- [Contributing](contributing)
-- [To Do](to-do)
-- [Testing on GCP](testing-the-example-deployment-on-gcp)
-- [Testing on Local Server](testing-with-local-server-if-gcp-is-not-online)
-- [Docs](docs)
+- [Architecture and FLow](#architecture-and-flow)
+- [Contributing](#contributing)
+- [To Do](#to-do)
+- [Testing on GCP](#testing-the-example-deployment-on-gcp)
+- [Testing on Local Server](#testing-with-local-server-if-gcp-is-not-online)
+- [Docs](#docs)
 
 
 ## Why and When to use Image
