@@ -16,6 +16,7 @@ Image - Server Instance and Room management for **Mirror**
 ## Index
 
 - [Why and When to use Image](#why-and-when-to-use-image)
+- [Demos & Showcase](https://github.com/Nirav-Madhani/Image-Demos) (Ctrl/Cmd + Click to Open in new tab)
 - [Architecture and FLow](#architecture-and-flow)
 - [Contributing](#contributing)
 - [To Do](#to-do)
