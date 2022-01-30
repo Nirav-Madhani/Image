@@ -13,6 +13,17 @@ Image - Server Instance and Room management for **Mirror**
 |__| |__|  |__| /__/     \__\ \______| |_______|
 
 ```
+## Index
+
+- [Why and When to use Image](#why-and-when-to-use-image)
+- [Demos & Showcase](https://github.com/Nirav-Madhani/Image-Demos) (Ctrl/Cmd + Click to Open in new tab)
+- [Architecture and FLow](#architecture-and-flow)
+- [Contributing](#contributing)
+- [To Do](#to-do)
+- [Testing on GCP](#testing-the-example-deployment-on-gcp)
+- [Testing on Local Server](#testing-with-local-server-if-gcp-is-not-online)
+- [Docs](#docs)
+
 
 ## Why and When to use Image
 
@@ -28,6 +39,17 @@ The basic code provided has all the functionality required to deploy the game to
 ## Architecture and FLow
 
 ![image](https://user-images.githubusercontent.com/77914957/148757652-cc7532d5-043a-4641-9b74-0a3f770c82a8.png)
+
+## Contributing
+
+Project **Image** is in its preliminary phase. There are lot's of features that can be added. Also, the project has not been evaluated in terms of security against common attacks. Any form of contribution, whether it be code, demo, documentation, bug-reports or vulnerability identification is very welcomed!
+
+## To Do
+
+- [ ] More Algorithms for Room Allocation
+- [ ] Authentication
+- [ ] Optional Use Database functionality
+- [ ] Handling more than 1 server, ie `Many Ip Many Ports`
 
 ## Testing the example deployment on GCP
 
@@ -55,6 +77,9 @@ Note: Number of players label will not be updated. It was for debugging purpose.
 
 3. Open `Builds/ClientLocal/MultiplayerRoom.exe` instead of `Builds/Client/MultiplayerRoom.exe`. and rest of the steps are same.
 
+### Docs
+- [Manual](Docs/Documentation.docx )
+- [Hosting on GCP](HostGCP.md)
 
 
 
