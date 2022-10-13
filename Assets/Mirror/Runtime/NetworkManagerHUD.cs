@@ -32,7 +32,7 @@ namespace Mirror
             {
                 StatusLabels();
             }
-            GUI.Label(new Rect(10, 70, 100, 20),"Port = "+GetComponent<KcpTransport>().Port.ToString());
+       //     GUI.Label(new Rect(10, 70, 100, 20),"Port = "+GetComponent<KcpTransport>().Port.ToString());
             GUI.Label(new Rect(10, 90, 100, 20),"Players = " + GetComponent<NetworkManager>().numPlayers.ToString());
             #if UNITY_SERVER
             GUI.Label(new Rect(10, 90, 100, 20),"Players = " + GetComponent<NetworkManager>().numPlayers.ToString());

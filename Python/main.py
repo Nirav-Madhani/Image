@@ -5,16 +5,19 @@ import subprocess
 import time
 import threading
 from config import *
+import os
 
 #https://stackoverflow.com/a/2581943/12907462
 def popen_and_call(on_exit, popen_args):
     def run_in_thread(on_exit, popen_args):
         #Windows
-        proc = subprocess.Popen(f'{EXC_PATH} {popen_args}',shell=False)
-        proc.wait()
-        #Linux
-        #subprocess.call(f'{EXC_PATH} {popen_args}',shell=True)
-        on_exit(popen_args)
+        if os.name == 'nt':         
+            proc = subprocess.Popen(f'{EXC_PATH} {popen_args}',shell=False)
+            proc.wait()
+        #Linux     
+        else:   
+            subprocess.call(f'./{EXC_PATH} {popen_args}',shell=True)
+            on_exit(popen_args)
         return
     thread = threading.Thread(target=run_in_thread, args=(on_exit, popen_args))
     thread.start()

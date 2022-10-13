@@ -1,0 +1,34 @@
+FROM python:3.10-slim
+EXPOSE 10000-10100
+
+# Keeps Python from generating .pyc files in the container
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# Turns off buffering for easier container logging
+ENV PYTHONUNBUFFERED=1
+
+# both files are explicitly required!
+
+WORKDIR /app
+
+COPY . /app
+RUN chmod +x LinuxServer.x86_64
+# Command to build image
+# docker build --pull --rm -f "dockerfile" -t python:slim "." 
+# To run this image into container
+# docker run -p 10000-10100:10000-10100 --name="test" -d python python main.py
+# Note: In above command, first python is image name and second python is command to run
+# To check logs
+# docker logs test
+# To stop container
+# docker stop test
+# To start container
+# docker start test
+# To remove container
+# docker rm test
+# To remove image
+# docker rmi python
+
+
+
+

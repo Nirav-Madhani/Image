@@ -16,6 +16,7 @@ namespace Mirror
         public const string Scheme = "tcp4";
 
         public ushort port = 7777;
+   
 
         [Header("Common")]
         [Tooltip("Nagle Algorithm can be disabled by enabling NoDelay")]
@@ -62,7 +63,8 @@ namespace Mirror
         Func<bool> enabledCheck;
 
         void Awake()
-        {
+
+        {            
             // tell Telepathy to use Unity's Debug.Log
             Telepathy.Log.Info = Debug.Log;
             Telepathy.Log.Warning = Debug.LogWarning;
