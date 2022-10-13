@@ -50,7 +50,10 @@ Project **Image** is in its preliminary phase. There are lot's of features that 
 - [ ] Authentication
 - [ ] Optional Use Database functionality
 - [ ] Handling more than 1 server, ie `Many Ip Many Ports`
+## Stats
+Powered by [GithubStatsTracker](https://github.com/Nirav-Madhani/GithubStatsTracker)
 
+![](https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRpQWfmElUl5p6sUCKp-TYJPMXfNF9tHqf5gH8BkF-N92uW94fxWyLK2psixOjZ4SxtDe-SCDG_7rPg/pubchart?oid=2004236886&format=image)
 ## Testing the example deployment on GCP
 
 1. Open `Builds/Client/MultiplayerRoom.exe`.
